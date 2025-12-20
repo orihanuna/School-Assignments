@@ -30,6 +30,7 @@ namespace Assignments
                 }
                 Console.WriteLine($"{(countL==3?"Lee":"Shir")} will start the Checkers match.");
                 Console.ReadKey();*/
+
                 /*Question 61 - Perfect Number
                 int i, num, sum = 1;
                 string output = "1";
@@ -48,6 +49,15 @@ namespace Assignments
                 }
                 else { Console.WriteLine($"{num} is not a perfect number."); }*/
 
+                /*Question 54 - Letters
+                char ch=' ', ch1; int count=0; string x;
+                Console.Write("Enter a character (#1): ");
+                ch1 = Console.ReadLine()[0];
+                for(int i = 2; i <= 25; i++){if (ch == ch1) count++;
+                    Console.Write($"Enter a character (#{i}): ");
+                    ch = Console.ReadLine()[0];}
+                Console.WriteLine($"{count} numbers were identical to the first character inputted.");*/
+                
                 c = Console.ReadKey(true);
             }
         }
