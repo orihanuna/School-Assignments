@@ -81,7 +81,7 @@ namespace Assignments
                     n = int.Parse(Console.ReadLine()); 
                 }
                 n = Math.Abs(n);
-                midi = (n==1 ? 1 : (n/2)+1); // if amount of numbers is 1, middle number is the only number
+                midi = (n+1)/2;
                 Console.Write($"Enter a number(#{i}): ");
                 prev = int.Parse(Console.ReadLine());
                 sum = prev;
