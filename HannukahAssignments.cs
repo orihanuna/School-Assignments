@@ -97,7 +97,7 @@ namespace Assignments
                     }
                     prev = cur;
                 }
-                Console.WriteLine($"Average: {(sum/1.0)/n}");
+                Console.WriteLine($"Average: {Math.Round((sum/1.0/n),2)}");
                 Console.WriteLine($"Middle number: {mid}");
                 Console.WriteLine($"Closest pair: {n1} & {n2}");
                 */
@@ -110,6 +110,22 @@ namespace Assignments
                     sum += i;
                 }
                 Console.Write($"{n}={sum+n}\n");*/
+
+                /*Question 42 - Average
+                int i,n1=0,n2=0,sum=0;
+                for (i = 1; i <= 20; i++){
+                    Console.Write($"(#{i}) Enter first number: ");
+                    n1= int.Parse(Console.ReadLine());
+                    Console.Write($"(#{i}) Enter second number: ");
+                    n2 = int.Parse(Console.ReadLine());
+                    if (n1 >= n2) sum += n1; else sum += n2;
+                }
+                Console.WriteLine($"Average of the larger numbers of each pair: {Math.Round(sum/20.0,2)}");
+                */
+                /*Question 43 - Car race*/
+                
+                /*Question 44 - Exponentiation*/
+
                 c = Console.ReadKey(true);
             }
         }
