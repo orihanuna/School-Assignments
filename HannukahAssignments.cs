@@ -101,6 +101,15 @@ namespace Assignments
                 Console.WriteLine($"Middle number: {mid}");
                 Console.WriteLine($"Closest pair: {n1} & {n2}");
                 */
+                /*Question 59 - 1+2+3+....+n=?
+                int n, i, sum = 0;
+                Console.Write("Enter a number: ");
+                n=int.Parse(Console.ReadLine());
+                for (i = 1; i < n; i++){
+                    Console.Write($"{i}+");
+                    sum += i;
+                }
+                Console.Write($"{n}={sum+n}\n");*/
                 c = Console.ReadKey(true);
             }
         }
