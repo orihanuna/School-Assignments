@@ -57,7 +57,20 @@ namespace Assignments
                     Console.Write($"Enter a character (#{i}): ");
                     ch = Console.ReadLine()[0];}
                 Console.WriteLine($"{count} numbers were identical to the first character inputted.");*/
-                
+
+                /*Question 55 - Evened Out
+                int num, sum=0, i;
+                Console.Write("Enter an even number: ");
+                num = Math.Abs(int.Parse(Console.ReadLine()));
+                string txt = $"2";
+                Console.WriteLine($"Number chosen: {num}\n2");
+                for (i = 4; i <= num; i += 2){
+                    Console.WriteLine(i); // Part 1
+                    sum += i; // Part 2
+                    txt += $"+{i}";
+                }
+                Console.WriteLine($"Sum: {sum}={txt}");*/
+
                 c = Console.ReadKey(true);
             }
         }
