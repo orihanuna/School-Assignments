@@ -56,7 +56,7 @@ namespace Assignments
                 for(int i = 2; i <= 25; i++){if (ch == ch1) count++;
                     Console.Write($"Enter a character (#{i}): ");
                     ch = Console.ReadLine()[0];}
-                Console.WriteLine($"{count} numbers were identical to the first character inputted.");*/
+                Console.WriteLine($"{count} characters were identical to the first character inputted.");*/
 
                 /*Question 55 - Evened Out
                 int num, sum=0, i;
@@ -71,6 +71,36 @@ namespace Assignments
                 }
                 Console.WriteLine($"Sum: {sum}={txt}");*/
 
+                /* Question 63 - Numbers
+                int n, sum, cur, prev, i = 1, mid, midi, mindif, n2 = 0, n1 = 0;
+                mindif = int.MaxValue;
+                Console.Write("How many numbers?(odd number): ");
+                n = int.Parse(Console.ReadLine());
+                while (n % 2 == 0) { 
+                    Console.Write("Again, ODD number: ");
+                    n = int.Parse(Console.ReadLine()); 
+                }
+                n = Math.Abs(n);
+                midi = (n==1 ? 1 : (n/2)+1); // if amount of numbers is 1, middle number is the only number
+                Console.Write($"Enter a number(#{i}): ");
+                prev = int.Parse(Console.ReadLine());
+                sum = prev;
+                mid = midi == 1 ? prev : 0;
+                for (i = 2; i <= n; i++){
+                    Console.Write($"Enter a number(#{i}): ");
+                    cur = int.Parse(Console.ReadLine());
+                    sum += cur;
+                    if (i == midi) mid = cur;
+                    if (cur - prev < mindif){
+                        mindif = cur - prev;
+                        n1 = cur; n2 = prev;
+                    }
+                    prev = cur;
+                }
+                Console.WriteLine($"Average: {(sum/1.0)/n}");
+                Console.WriteLine($"Middle number: {mid}");
+                Console.WriteLine($"Closest pair: {n1} & {n2}");
+                */
                 c = Console.ReadKey(true);
             }
         }
