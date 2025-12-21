@@ -139,16 +139,16 @@ namespace Assignments
                 Console.WriteLine($"Under 4 minutes: {sund4}");
                 Console.WriteLine($"Average time: {Math.Round(sum/40.0,2)}");
                 */
-                /*Question 44 - Exponentiation*/
+                /*Question 44 - Exponentiation
                 double num,exp,sum=1;
                 Console.Write("Enter the base number: ");
                 num = int.Parse(Console.ReadLine());
                 Console.Write("Enter the exponent: ");
                 exp = int.Parse(Console.ReadLine());
-                if(exp!=0) for (int i = 1; i <= Math.Abs(exp); i++) sum *= num;
-                if (exp < 0) sum = 1.0 / sum;
+                if (exp!=0) for (int i = 1; i <= Math.Abs(exp); i++) sum *= num;
+                if (exp<0) sum = 1.0/sum;
                 Console.WriteLine($"{num}^{exp}={sum}");
-
+                */
                 c = Console.ReadKey(true);
             }
         }
