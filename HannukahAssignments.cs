@@ -122,8 +122,23 @@ namespace Assignments
                 }
                 Console.WriteLine($"Average of the larger numbers of each pair: {Math.Round(sum/20.0,2)}");
                 */
-                /*Question 43 - Car race*/
-                
+                /*Question 43 - Car race
+                int i,sum=0, plate, time, cund4=0; string sund4 = "";
+                for (i = 1; i <= 40; i++){
+                    Console.Write($"Car #{i}, Enter plate number: ");
+                    plate = int.Parse(Console.ReadLine());
+                    Console.Write($"Car #{i}, Enter your time in seconds: ");
+                    time = int.Parse(Console.ReadLine());
+                    if (time>300) Console.WriteLine($"You will not advance to the final stage.");
+                    if (time < 240){
+                        cund4++;
+                        sund4 += $"{plate}, ";
+                    }
+                    sum += time;
+                }
+                Console.WriteLine($"Under 4 minutes: {sund4}");
+                Console.WriteLine($"Average time: {Math.Round(sum/40.0,2)}");
+                */
                 /*Question 44 - Exponentiation*/
 
                 c = Console.ReadKey(true);
