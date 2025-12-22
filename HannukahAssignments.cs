@@ -33,22 +33,28 @@ namespace Assignments
 
                 /*Question 61 - Perfect Number
                 int i, num, sum = 1;
-                string output = "1";
                 Console.Write("Enter a whole number: ");
                 num = int.Parse(Console.ReadLine());
                 for (i = 2; i < num; i++)
                 {
                     if (num % i == 0) {
                         sum += i;
-                        output += $"+{i}";
                     }
                 }
                 if (sum == num)
                 {
-                    Console.WriteLine($"{num} is a perfect number.\n{num}={output}");
+                    Console.Write($"{num} is a perfect number:\n{num}=1");
+                    for (i = 2; i < num; i++)
+                    {
+                        if (num % i == 0)
+                        {
+                            Console.Write($"+{i}"); ;
+                        }
+                    }
+                    Console.WriteLine();
                 }
-                else { Console.WriteLine($"{num} is not a perfect number."); }*/
-
+                else { Console.WriteLine($"{num} is not a perfect number."); }
+                */
                 /*Question 54 - Letters
                 char ch=' ', ch1; int count=0; string x;
                 Console.Write("Enter a character (#1): ");
