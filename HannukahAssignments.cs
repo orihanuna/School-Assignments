@@ -117,13 +117,13 @@ namespace Assignments
                 bool win= false;
                 while (!win)
                 {
-                    Console.Write($"Round #{i}, Lee's turn(E/P): ");
-                    if (Char.ToLower(char.Parse(Console.ReadLine())) == 'e') { countL++; }
+                    Console.Write($"Round #{i}, Shir's turn(E/P): ");
+                    if (Char.ToLower(char.Parse(Console.ReadLine())) == 'e') { countS++; }
                     if (countL == 3) { win = true; }
                     if (!win)
                     {
-                        Console.Write($"Round #{i}, Shir's turn(E/P): ");
-                        if (Char.ToLower(char.Parse(Console.ReadLine())) == 'e') { countS++; }
+                        Console.Write($"Round #{i}, Lee's turn(E/P): ");
+                        if (Char.ToLower(char.Parse(Console.ReadLine())) == 'e') { countL++; }
                         if (countS == 3) { win = true; }
                         i++;
                     }
